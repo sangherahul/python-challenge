@@ -33,5 +33,6 @@ with open (file,newline='') as csvfile:
         
 print(f' Financial Analysis \n _____________________\n\n Total Months: {row_count} \n Total: {net_amount} \n Average  Change: {round((avg_change/(row_count-1)),2)} \n Greatest Increase in Profits: {max_profit_month} ({max_profit}) \n Greatest Decrease in Profits: {max_loss_month} ({max_loss})')
 
-
+text_file=open("Analysis.txt",'w')
+text_file.write(f' Financial Analysis \n _____________________\n\n Total Months: {row_count} \n Total: {net_amount} \n Average  Change: {round((avg_change/(row_count-1)),2)} \n Greatest Increase in Profits: {max_profit_month} ({max_profit}) \n Greatest Decrease in Profits: {max_loss_month} ({max_loss})')
 
